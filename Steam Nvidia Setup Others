@@ -1,0 +1,34 @@
+To install nvidia:
+# xbps-install nvidia nvidia-dkms nvidia-libs nvidia-libs-32bit
+
+
+To install steam:
+1) Install flatpak OR
+
+2) # xbps-install libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit
+# xbps-install -S mono
+
+Then put inside .bashrc:
+LD_PRELOAD='/usr/$LIB/libstdc++.so.6 /usr/$LIB/libgcc_s.so.1 /usr/$LIB/libxcb.so.1' steam
+(Can remove afterwards)
+
+FIREFOX PASSWORDS:
+Go to about:config
+signon.management.page.fileImport.enabled false ->> TRUE
+
+Go to Passwords (middle of screen)
+Go to 3 dots
+Import
+
+FIREFOX BROWSER:
+Go to Bookmarks
+Go to Manage Bookmarks at the bottom
+Import and Backup (at the top)
+
+From Bookmarks Menu -- Bookmarks bar -- Imported -- get Homey
+Copy into Bookmarks Toolbar
+
+
+DUAL BOOT WINDOWS
+In /etc/default/grub
+put in 'GRUB_DISABLE_OS_PROBER=false' at end to get windows.  Then do '# grub-mkconfig -o /boot/grub/grub.cfg'

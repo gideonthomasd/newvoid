@@ -1,3 +1,15 @@
+Lightdm:
+sudo ln -s /etc/sv/lightdm /var/service/
+sudo rm /var/service/lxdm
+
+Goto /etc/lightdm/Xsession
+in last line bar one write:
+eval "$(dbus-launch --sh-syntax --exit-with-session)"
+
+this enables flatpak to run.
+
+
+
 To install nvidia:
 # xbps-install nvidia nvidia-dkms nvidia-libs nvidia-libs-32bit
 

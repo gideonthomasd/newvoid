@@ -253,7 +253,7 @@ cd ~/st-transparency-scrollback
 sudo make clean install
 
 #########################Install bumblebee-status files - mine
-cd ~/void/i3/bumblebee-status/myfiles
+cd ~/newvoid/i3/bumblebee-status/myfiles
 #sudo cp -r * /usr/share/bumblebee-status/bumblebee_status/modules/contrib
 sudo cp -r * /usr/lib/python3.11/site-packages/bumblebee_status/modules/contrib
 #xmonad --recompile
